@@ -1,0 +1,10 @@
+<apex:page controller="TestList" >
+  <apex:pageBlock title="List OF Accounts">
+  <apex:pageBlockTable value="{!acts}" var="a">name,type,industry,fax,phone
+  <apex:column value="{!a.name}"/>
+  <apex:column value="{!a.type}"/>
+  <apex:column value="{!a.industry}"/>
+  <apex:column value="{!a.phone}"/>
+  </apex:pageBlockTable>
+  </apex:pageBlock>
+</apex:page>

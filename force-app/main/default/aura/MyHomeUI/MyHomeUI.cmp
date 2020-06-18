@@ -1,0 +1,7 @@
+<aura:component controller="MyHome" implements="force:appHostable">
+  <aura:handler name="init" value="{!this}" action="{!c.GetUserVal}" />
+  <aura:attribute name="Userdata" type="Object" />
+
+  <lightning:input name="input1" value="{!v.Userdata.Name}" label="Name" />
+  <lightning:input name="input2" value="{!v.Userdata.Phone}" label="Phone" />
+</aura:component>

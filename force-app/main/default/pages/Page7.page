@@ -1,0 +1,5 @@
+<apex:page controller="Test1">
+  {!MyTest}<br/>
+  {!MyTestAcct.Name}<br/>
+  {!MyTestAcct.Industry}<br/>
+  </apex:page>

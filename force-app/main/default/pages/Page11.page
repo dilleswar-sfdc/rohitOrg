@@ -1,0 +1,15 @@
+<apex:page controller="SearchKeyword">
+<apex:form >
+ <apex:pageBlock >
+ <apex:inputtext value="{!keyword}" /> 
+ <apex:commandButton value="Search" action="{!BindAccount}" reRender="Searched"/>
+ <apex:pageblocktable value="{!AccountList}" var="a" id="Searched">
+ <apex:column value="{!a.Name}"/>
+ <apex:column value="{!a.Type}"/>
+ <apex:column value="{!a.Industry}"/>
+ <apex:column value="{!a.Phone}"/>
+ <apex:column value="{!a.Fax}"/> 
+ </apex:pageblocktable> 
+ </apex:pageBlock>
+ </apex:form>
+</apex:page>

@@ -1,0 +1,8 @@
+<aura:component
+  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+  access="global">
+    <Aura:attribute name="display1" type="string" default="dummy" ></Aura:attribute>
+    <div>
+    <p> {!v.display1}</p>
+    </div>
+</aura:component>

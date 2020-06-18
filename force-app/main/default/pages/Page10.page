@@ -1,0 +1,14 @@
+<apex:page controller="Testwithrefference" >
+<apex:form >
+ <apex:pageBlock >
+ <apex:commandButton value="Show All Accounts" action="{!showall}" reRender="Mytab"/>
+ <apex:commandButton value="Show Direct" action="{!CustomerDirect}" reRender="Mytab"/>
+ <apex:pageblockTable value="{!selectAcct}" var="a" id="Mytab">
+  <apex:column value="{!a.name}"/>
+  <apex:column value="{!a.type}"/>
+  <apex:column value="{!a.industry}"/>
+  <apex:column value="{!a.phone}"/>
+ </apex:pageblockTable>
+ </apex:pageBlock>
+ </apex:form>
+</apex:page>

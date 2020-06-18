@@ -1,0 +1,28 @@
+<apex:page controller="InsertData" >
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockSection >
+
+<!--Enter Account Name-->
+<apex:inputField value="{!AccountData.Name}"/><br/>
+
+
+<!--Enter Account Type-->
+<apex:inputField value="{!AccountData.Type}"/><br/>
+
+
+<!--Enter Industry of Account Name-->
+<apex:inputField value="{!AccountData.Industry}"/><br/>
+
+
+<!--Enter Account Phone-->
+<apex:inputField value="{!AccountData.Phone}"/><br/>
+
+</apex:pageBlockSection>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+  
+</apex:page>
